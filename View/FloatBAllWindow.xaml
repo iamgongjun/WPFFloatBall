@@ -1,0 +1,147 @@
+﻿<Window
+    x:Class="WPFFloatBall.View.FloatAlarmWIndow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="FloatAlarmWIndow"
+    Width="100"
+    Height="100"
+    AllowsTransparency="True"
+    Background="Transparent"
+    ResizeMode="NoResize"
+    ShowInTaskbar="False"
+    Topmost="True"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
+    mc:Ignorable="d">
+    <Window.Resources>
+        <FontFamily x:Key="DigitalFontFamily">pack://application:,,,/Resource/Font/#Digital</FontFamily>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="8*" />
+            <ColumnDefinition Width="8*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="8*" />
+            <RowDefinition Height="8*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <Grid
+            Grid.Row="0"
+            Grid.RowSpan="10"
+            Grid.Column="0"
+            Grid.ColumnSpan="10"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch">
+            <Image Source="pack://application:,,,/Resource/Image/Out4.png" Style="{StaticResource Clockwise}" />
+        </Grid>
+        <Grid
+            Grid.Row="2"
+            Grid.RowSpan="6"
+            Grid.Column="2"
+            Grid.ColumnSpan="6"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch">
+            <Image Source="pack://application:,,,/Resource/Image/Out3.png" Style="{StaticResource AntiClockwise}" />
+        </Grid>
+        <Grid
+            Name="out2"
+            Grid.Row="3"
+            Grid.RowSpan="4"
+            Grid.Column="3"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch">
+            <Image Source="pack://application:,,,/Resource/Image/Out2.png" Style="{StaticResource AntiClockwise}" />
+        </Grid>
+
+        <Grid
+            Grid.Row="4"
+            Grid.RowSpan="2"
+            Grid.Column="4"
+            Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+
+            <Grid
+                Grid.Row="1"
+                Grid.RowSpan="6"
+                Grid.Column="1"
+                Grid.ColumnSpan="6"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+                <Image Source="pack://application:,,,/Resource/Image/Out1.png" />
+            </Grid>
+            <Grid
+                Grid.Row="0"
+                Grid.RowSpan="8"
+                Grid.Column="0"
+                Grid.ColumnSpan="8"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+                <Grid.Background>
+                    <ImageBrush ImageSource="pack://application:,,,/Resource/Image/Center0.png" Stretch="UniformToFill" />
+                </Grid.Background>
+            </Grid>
+            <TextBlock
+                Name="tbAlarmNumber"
+                Grid.Row="2"
+                Grid.RowSpan="4"
+                Grid.Column="2"
+                Grid.ColumnSpan="4"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontFamily="{StaticResource DigitalFontFamily}"
+                FontSize="20"
+                Foreground="White"
+                Text="111" />
+
+            <TextBlock
+                Grid.Row="5"
+                Grid.RowSpan="2"
+                Grid.Column="1"
+                Grid.ColumnSpan="6"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"
+                FontSize="10"
+                Foreground="White"
+                Text="有病毒" />
+        </Grid>
+    </Grid>
+</Window>

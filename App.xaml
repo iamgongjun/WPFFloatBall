@@ -1,0 +1,24 @@
+<Application
+    x:Class="WPFFloatBall.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:d1p1="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d1p1:Ignorable="d"
+    Startup="ApplicationStartup">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/HandyControl;component/Themes/SkinDefault.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/HandyControl;component/Themes/Theme.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/WPFFloatBall;component/Style/Style/ButtonStyle.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/WPFFloatBall;component/Style/Style/Path.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/WPFFloatBall;component/Style/Style/ComboxStyle.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/WPFFloatBall;component/Style/Style/ImageStyle.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/WPFFloatBall;component/Style/Style/DatagridStyle.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/WPFFloatBall;component/Style/Style/ComboBoxStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
