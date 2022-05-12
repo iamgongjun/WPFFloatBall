@@ -235,20 +235,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Resource Include="Resource\Image\Empty.png" />
-    <Resource Include="Resource\Image\AlarmBackgroupIma.png" />
     <Resource Include="Resource\Image\Out4.png" />
     <Resource Include="Resource\Image\Center0.png" />
     <Resource Include="Resource\Image\Out1.png" />
     <Resource Include="Resource\Image\Out2.png" />
     <Resource Include="Resource\Image\Out3.png" />
-    <Resource Include="Resource\Image\Close.png" />
-    <Resource Include="Resource\Image\mini.png" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="AirportEnclosureWPF_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -264,21 +259,6 @@
     <Folder Include="Themes\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resource\Image\UnselectedBackgroud.png" />
-    <Resource Include="Resource\Image\SelectedBackgroud.png" />
-    <Resource Include="Resource\Image\Down.png" />
-    <Resource Include="Resource\Image\Up.png" />
-    <Resource Include="Resource\Image\Camera.png" />
-    <Resource Include="Resource\Image\VerticalLine.png" />
-    <Resource Include="Resource\Image\RightTail.png" />
-    <Resource Include="Resource\Image\LeftTail.png" />
-    <Resource Include="Resource\Image\AlarmDetailBackgroud.png" />
-    <Resource Include="Resource\Image\SamllDirection.png" />
-    <Resource Include="Resource\Image\BigDirection.png" />
-    <Resource Include="Resource\Image\Srtech.png" />
-    <Resource Include="Resource\Image\Center.png" />
-    <Resource Include="Resource\Image\Arrow.png" />
-    <Resource Include="Resource\Image\ItemPanelBackgroud.png" />
     <Resource Include="Resource\Image\AlarmDot.png" />
   </ItemGroup>
   <ItemGroup>
